@@ -1,0 +1,1336 @@
+nohup: ignoring input
+Loaded config file sucessfully.
+pretrained_wordemb_file /home/song/embedding_save/glove.840B.300d.txt
+pretrained_charemb_file 
+data_dir /data/disk1/song/TargetSentiment/context/examples/T_data
+train_file /data/disk1/song/TargetSentiment/context/examples/T_data/train.conll
+dev_file /data/disk1/song/TargetSentiment/context/examples/T_data/test.conll
+test_file /data/disk1/song/TargetSentiment/context/examples/T_data/test.conll
+shrink_feature_thresholds 0
+run_insts -1
+save_dir /data/disk1/song/TargetSentiment/context/examples/model
+config_file /data/disk1/song/TargetSentiment/context/examples/model/config.cfg
+save_model_path /data/disk1/song/TargetSentiment/context/examples/model/model
+save_vocab_path /data/disk1/song/TargetSentiment/context/examples/model/vocab
+load_dir /data/disk1/song/TargetSentiment/context/examples/model
+load_model_path /data/disk1/song/TargetSentiment/context/examples/model/model
+load_dir_e /data/disk1/song/TargetSentiment/context/examples/model_e
+load_model_path_e /data/disk1/song/TargetSentiment/context/examples/model_e/model
+load_vocab_path /data/disk1/song/TargetSentiment/context/examples/model/vocab
+lstm_layers 1
+word_dims 300
+char_dims 30
+lstm_hiddens 300
+attention_size 150
+dropout_emb 0.2
+dropout_lstm 0.2
+learning_rate 0.01
+decay 1e-6
+clip_grad 5
+thread_nums 1
+maxiters 10000
+train_batch_size 64
+test_batch_size 64
+validate_every 1
+save_after 0
+update_every 1
+test getting train_insts time:  0.32903242111206055
+test getting dev_insts time:  0.3607063293457031
+test getting test_insts time:  0.39322829246520996
+Load embedding...
+The dim of pretrained embedding is 300
+
+Embedding:
+  pretrain word:2195998, alphabet word:13376, prefect match:11356, case match:0, oov:2020, oov%:0.15101674641148324
+test building model time:  412.5227906703949
+training...
+
+epoch is 0, average loss_e is 0.016179022692828154 
+Dev...
+neutral: precision: 50.3639%, recall: 100.0%, fscore: 66.98935140367861% (346/687/346)
+negative: precision: 0.0000%, recall: 0.0%, fscore: 0.0% (0/0/173)
+positive: precision: 100.0000%, recall: 2.8901734104046244%, fscore: 5.617977528089887% (5/5/173)
+
+Evaluation - micro fscore: 50.7225%(351/692), macro fscore: 24.202442977256165% 
+
+now, best micro fscore is 50.72254335260116%, best macro fscore is 24.202442977256165%
+
+epoch is 1, average loss_e is 0.015504970576386062 
+Dev...
+neutral: precision: 52.3883%, recall: 98.26589595375722%, fscore: 68.34170854271358% (340/649/346)
+negative: precision: 68.7500%, recall: 6.358381502890173%, fscore: 11.640211640211637% (11/16/173)
+positive: precision: 74.0741%, recall: 11.560693641618498%, fscore: 20.0% (20/27/173)
+
+Evaluation - micro fscore: 53.6127%(371/692), macro fscore: 33.32730672764174% 
+
+now, best micro fscore is 53.612716763005785%, best macro fscore is 33.32730672764174%
+
+epoch is 2, average loss_e is 0.014537721150079551 
+Dev...
+neutral: precision: 56.2387%, recall: 89.88439306358381%, fscore: 69.18798665183537% (311/553/346)
+negative: precision: 71.9298%, recall: 23.699421965317917%, fscore: 35.65217391304348% (41/57/173)
+positive: precision: 62.1951%, recall: 29.47976878612717%, fscore: 40.0% (51/82/173)
+
+Evaluation - micro fscore: 58.2370%(403/692), macro fscore: 48.28005352162628% 
+
+now, best micro fscore is 58.236994219653184%, best macro fscore is 48.28005352162628%
+
+epoch is 3, average loss_e is 0.013178241695752558 
+Dev...
+neutral: precision: 62.5835%, recall: 81.21387283236994%, fscore: 70.69182389937107% (281/449/346)
+negative: precision: 72.7273%, recall: 46.24277456647399%, fscore: 56.53710247349824% (80/110/173)
+positive: precision: 57.1429%, recall: 43.93063583815029%, fscore: 49.673202614379086% (76/133/173)
+
+Evaluation - micro fscore: 63.1503%(437/692), macro fscore: 58.967376329082796% 
+
+now, best micro fscore is 63.150289017341045%, best macro fscore is 58.967376329082796%
+
+epoch is 4, average loss_e is 0.012383822171131566 
+Dev...
+neutral: precision: 65.9898%, recall: 75.14450867052022%, fscore: 70.27027027027026% (260/394/346)
+negative: precision: 64.4578%, recall: 61.849710982658955%, fscore: 63.1268436578171% (107/166/173)
+positive: precision: 59.8485%, recall: 45.664739884393065%, fscore: 51.80327868852458% (79/132/173)
+
+Evaluation - micro fscore: 64.4509%(446/692), macro fscore: 61.7334642055373% 
+
+now, best micro fscore is 64.45086705202311%, best macro fscore is 61.7334642055373%
+
+epoch is 5, average loss_e is 0.011860734060862842 
+Dev...
+neutral: precision: 66.0934%, recall: 77.74566473988439%, fscore: 71.44754316069056% (269/407/346)
+negative: precision: 66.4634%, recall: 63.005780346820806%, fscore: 64.68842729970325% (109/164/173)
+positive: precision: 61.9835%, recall: 43.35260115606936%, fscore: 51.02040816326531% (75/121/173)
+
+Evaluation - micro fscore: 65.4624%(453/692), macro fscore: 62.3854595412197% 
+
+now, best micro fscore is 65.46242774566474%, best macro fscore is 62.3854595412197%
+
+epoch is 6, average loss_e is 0.011674517784647795 
+Dev...
+neutral: precision: 63.8158%, recall: 84.10404624277457%, fscore: 72.56857855361596% (291/456/346)
+negative: precision: 74.2188%, recall: 54.91329479768786%, fscore: 63.12292358803988% (95/128/173)
+positive: precision: 63.8889%, recall: 39.884393063583815%, fscore: 49.11032028469751% (69/108/173)
+
+Evaluation - micro fscore: 65.7514%(455/692), macro fscore: 61.60060747545112% 
+
+now, best micro fscore is 65.7514450867052%, best macro fscore is 62.3854595412197%
+
+epoch is 7, average loss_e is 0.011342217936655697 
+Dev...
+neutral: precision: 64.0860%, recall: 86.1271676300578%, fscore: 73.48951911220716% (298/465/346)
+negative: precision: 78.1818%, recall: 49.71098265895954%, fscore: 60.7773851590106% (86/110/173)
+positive: precision: 66.6667%, recall: 45.08670520231214%, fscore: 53.79310344827586% (78/117/173)
+
+Evaluation - micro fscore: 66.7630%(462/692), macro fscore: 62.686669239831204% 
+
+now, best micro fscore is 66.76300578034682%, best macro fscore is 62.686669239831204%
+
+epoch is 8, average loss_e is 0.011160870538834406 
+Dev...
+neutral: precision: 65.9817%, recall: 83.52601156069365%, fscore: 73.72448979591837% (289/438/346)
+negative: precision: 75.2000%, recall: 54.33526011560693%, fscore: 63.08724832214766% (94/125/173)
+positive: precision: 65.1163%, recall: 48.554913294797686%, fscore: 55.62913907284768% (84/129/173)
+
+Evaluation - micro fscore: 67.4855%(467/692), macro fscore: 64.14695906363791% 
+
+now, best micro fscore is 67.48554913294798%, best macro fscore is 64.14695906363791%
+
+epoch is 9, average loss_e is 0.010930865299792923 
+Dev...
+neutral: precision: 63.0480%, recall: 87.28323699421965%, fscore: 73.2121212121212% (302/479/346)
+negative: precision: 77.6699%, recall: 46.24277456647399%, fscore: 57.971014492753625% (80/103/173)
+positive: precision: 68.1818%, recall: 43.35260115606936%, fscore: 53.003533568904594% (75/110/173)
+
+Evaluation - micro fscore: 66.0405%(457/692), macro fscore: 61.395556424593146% 
+
+now, best micro fscore is 67.48554913294798%, best macro fscore is 64.14695906363791%
+
+epoch is 10, average loss_e is 0.010820683196415099 
+Dev...
+neutral: precision: 69.0217%, recall: 73.41040462427746%, fscore: 71.14845938375349% (254/368/346)
+negative: precision: 71.8310%, recall: 58.95953757225434%, fscore: 64.76190476190477% (102/142/173)
+positive: precision: 56.5934%, recall: 59.53757225433526%, fscore: 58.0281690140845% (103/182/173)
+
+Evaluation - micro fscore: 66.3295%(459/692), macro fscore: 64.64617771991425% 
+
+now, best micro fscore is 67.48554913294798%, best macro fscore is 64.64617771991425%
+
+epoch is 11, average loss_e is 0.010731934911894555 
+Dev...
+neutral: precision: 65.9039%, recall: 83.23699421965318%, fscore: 73.5632183908046% (288/437/346)
+negative: precision: 78.3784%, recall: 50.28901734104046%, fscore: 61.26760563380282% (87/111/173)
+positive: precision: 62.5000%, recall: 52.02312138728323%, fscore: 56.782334384858046% (90/144/173)
+
+Evaluation - micro fscore: 67.1965%(465/692), macro fscore: 63.87105280315516% 
+
+now, best micro fscore is 67.48554913294798%, best macro fscore is 64.64617771991425%
+
+epoch is 12, average loss_e is 0.010575130781424897 
+Dev...
+neutral: precision: 69.1932%, recall: 81.79190751445087%, fscore: 74.96688741721854% (283/409/346)
+negative: precision: 66.8750%, recall: 61.849710982658955%, fscore: 64.26426426426427% (107/160/173)
+positive: precision: 69.1057%, recall: 49.13294797687861%, fscore: 57.432432432432435% (85/123/173)
+
+Evaluation - micro fscore: 68.6416%(475/692), macro fscore: 65.55452803797175% 
+
+now, best micro fscore is 68.64161849710982%, best macro fscore is 65.55452803797175%
+
+epoch is 13, average loss_e is 0.010330819938217804 
+Dev...
+neutral: precision: 70.7124%, recall: 77.45664739884393%, fscore: 73.93103448275862% (268/379/346)
+negative: precision: 65.8683%, recall: 63.58381502890174%, fscore: 64.70588235294117% (110/167/173)
+positive: precision: 62.3288%, recall: 52.601156069364166%, fscore: 57.05329153605015% (91/146/173)
+
+Evaluation - micro fscore: 67.7746%(469/692), macro fscore: 65.23006945724998% 
+
+now, best micro fscore is 68.64161849710982%, best macro fscore is 65.55452803797175%
+
+epoch is 14, average loss_e is 0.010298117016423114 
+Dev...
+neutral: precision: 70.5722%, recall: 74.85549132947978%, fscore: 72.65077138849931% (259/367/346)
+negative: precision: 66.4671%, recall: 64.16184971098265%, fscore: 65.29411764705883% (111/167/173)
+positive: precision: 60.1266%, recall: 54.91329479768786%, fscore: 57.40181268882175% (95/158/173)
+
+Evaluation - micro fscore: 67.1965%(465/692), macro fscore: 65.11556724145996% 
+
+now, best micro fscore is 68.64161849710982%, best macro fscore is 65.55452803797175%
+
+epoch is 15, average loss_e is 0.010062953699570226 
+Dev...
+neutral: precision: 69.6682%, recall: 84.97109826589595%, fscore: 76.5625% (294/422/346)
+negative: precision: 64.6409%, recall: 67.63005780346822%, fscore: 66.10169491525424% (117/181/173)
+positive: precision: 77.5281%, recall: 39.884393063583815%, fscore: 52.67175572519085% (69/89/173)
+
+Evaluation - micro fscore: 69.3642%(480/692), macro fscore: 65.11198354681504% 
+
+now, best micro fscore is 69.36416184971098%, best macro fscore is 65.55452803797175%
+
+epoch is 16, average loss_e is 0.009930225887468882 
+Dev...
+neutral: precision: 67.1111%, recall: 87.28323699421965%, fscore: 75.87939698492463% (302/450/346)
+negative: precision: 83.3333%, recall: 49.13294797687861%, fscore: 61.81818181818181% (85/102/173)
+positive: precision: 70.0000%, recall: 56.64739884393064%, fscore: 62.61980830670927% (98/140/173)
+
+Evaluation - micro fscore: 70.0867%(485/692), macro fscore: 66.77246236993857% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.77246236993857%
+
+epoch is 17, average loss_e is 0.009859935964970869 
+Dev...
+neutral: precision: 70.7447%, recall: 76.878612716763%, fscore: 73.6842105263158% (266/376/346)
+negative: precision: 71.0345%, recall: 59.53757225433526%, fscore: 64.77987421383648% (103/145/173)
+positive: precision: 60.8187%, recall: 60.115606936416185%, fscore: 60.46511627906976% (104/171/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 66.309733673074% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.77246236993857%
+
+epoch is 18, average loss_e is 0.009740001284422315 
+Dev...
+neutral: precision: 69.9267%, recall: 82.65895953757226%, fscore: 75.76158940397352% (286/409/346)
+negative: precision: 71.6312%, recall: 58.38150289017341%, fscore: 64.33121019108282% (101/141/173)
+positive: precision: 66.9014%, recall: 54.91329479768786%, fscore: 60.317460317460316% (95/142/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 66.80341997083889% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.80341997083889%
+
+epoch is 19, average loss_e is 0.009606699915412737 
+Dev...
+neutral: precision: 67.7570%, recall: 83.8150289017341%, fscore: 74.93540051679587% (290/428/346)
+negative: precision: 76.8595%, recall: 53.75722543352601%, fscore: 63.26530612244897% (93/121/173)
+positive: precision: 67.1329%, recall: 55.49132947976878%, fscore: 60.759493670886066% (96/143/173)
+
+Evaluation - micro fscore: 69.2197%(479/692), macro fscore: 66.32006677004364% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.80341997083889%
+
+epoch is 20, average loss_e is 0.009538152126823457 
+Dev...
+neutral: precision: 69.6602%, recall: 82.94797687861272%, fscore: 75.72559366754619% (287/412/346)
+negative: precision: 72.3404%, recall: 58.95953757225434%, fscore: 64.96815286624205% (102/141/173)
+positive: precision: 66.1871%, recall: 53.179190751445084%, fscore: 58.97435897435898% (92/139/173)
+
+Evaluation - micro fscore: 69.5087%(481/692), macro fscore: 66.5560351693824% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.80341997083889%
+
+epoch is 21, average loss_e is 0.009367656875021604 
+Dev...
+neutral: precision: 70.0240%, recall: 84.39306358381504%, fscore: 76.53997378768021% (292/417/346)
+negative: precision: 68.4848%, recall: 65.3179190751445%, fscore: 66.86390532544378% (113/165/173)
+positive: precision: 69.0909%, recall: 43.93063583815029%, fscore: 53.71024734982331% (76/110/173)
+
+Evaluation - micro fscore: 69.5087%(481/692), macro fscore: 65.70470882098243% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 66.80341997083889%
+
+epoch is 22, average loss_e is 0.009180458618936186 
+Dev...
+neutral: precision: 71.5405%, recall: 79.1907514450867%, fscore: 75.17146776406037% (274/383/346)
+negative: precision: 69.8113%, recall: 64.16184971098265%, fscore: 66.86746987951805% (111/159/173)
+positive: precision: 65.3333%, recall: 56.64739884393064%, fscore: 60.681114551083596% (98/150/173)
+
+Evaluation - micro fscore: 69.7977%(483/692), macro fscore: 67.573350731554% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 67.573350731554%
+
+epoch is 23, average loss_e is 0.009255653665382035 
+Dev...
+neutral: precision: 71.7277%, recall: 79.1907514450867%, fscore: 75.27472527472528% (274/382/346)
+negative: precision: 76.3359%, recall: 57.80346820809249%, fscore: 65.78947368421053% (100/131/173)
+positive: precision: 62.0112%, recall: 64.16184971098265%, fscore: 63.06818181818181% (111/179/173)
+
+Evaluation - micro fscore: 70.0867%(485/692), macro fscore: 68.04412692570588% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 68.04412692570588%
+
+epoch is 24, average loss_e is 0.008956775387597024 
+Dev...
+neutral: precision: 71.8833%, recall: 78.32369942196532%, fscore: 74.96542185338865% (271/377/346)
+negative: precision: 67.2515%, recall: 66.47398843930635%, fscore: 66.86046511627906% (115/171/173)
+positive: precision: 64.5833%, recall: 53.75722543352601%, fscore: 58.675078864353324% (93/144/173)
+
+Evaluation - micro fscore: 69.2197%(479/692), macro fscore: 66.83365527800701% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 68.04412692570588%
+
+epoch is 25, average loss_e is 0.009010383322340797 
+Dev...
+neutral: precision: 68.9157%, recall: 82.65895953757226%, fscore: 75.16425755584757% (286/415/346)
+negative: precision: 63.1579%, recall: 69.36416184971098%, fscore: 66.11570247933885% (120/190/173)
+positive: precision: 74.7126%, recall: 37.57225433526011%, fscore: 50.0% (65/87/173)
+
+Evaluation - micro fscore: 68.0636%(471/692), macro fscore: 63.75998667839548% 
+
+now, best micro fscore is 70.08670520231213%, best macro fscore is 68.04412692570588%
+
+epoch is 26, average loss_e is 0.008843575585253385 
+Dev...
+neutral: precision: 71.8670%, recall: 81.21387283236994%, fscore: 76.2550881953867% (281/391/346)
+negative: precision: 73.6486%, recall: 63.005780346820806%, fscore: 67.91277258566979% (109/148/173)
+positive: precision: 66.0131%, recall: 58.38150289017341%, fscore: 61.963190184049076% (101/153/173)
+
+Evaluation - micro fscore: 70.9538%(491/692), macro fscore: 68.71035032170184% 
+
+now, best micro fscore is 70.95375722543352%, best macro fscore is 68.71035032170184%
+
+epoch is 27, average loss_e is 0.008521935042488028 
+Dev...
+neutral: precision: 70.0472%, recall: 85.83815028901735%, fscore: 77.14285714285714% (297/424/346)
+negative: precision: 68.9441%, recall: 64.16184971098265%, fscore: 66.46706586826346% (111/161/173)
+positive: precision: 73.8318%, recall: 45.664739884393065%, fscore: 56.42857142857143% (79/107/173)
+
+Evaluation - micro fscore: 70.3757%(487/692), macro fscore: 66.67949814656401% 
+
+now, best micro fscore is 70.95375722543352%, best macro fscore is 68.71035032170184%
+
+epoch is 28, average loss_e is 0.008554738836971169 
+Dev...
+neutral: precision: 75.7225%, recall: 75.72254335260115%, fscore: 75.72254335260115% (262/346/346)
+negative: precision: 73.5484%, recall: 65.89595375722543%, fscore: 69.51219512195121% (114/155/173)
+positive: precision: 63.3508%, recall: 69.94219653179191%, fscore: 66.4835164835165% (121/191/173)
+
+Evaluation - micro fscore: 71.8208%(497/692), macro fscore: 70.57275165268962% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 29, average loss_e is 0.008414160293926085 
+Dev...
+neutral: precision: 72.8682%, recall: 81.5028901734104%, fscore: 76.94406548431104% (282/387/346)
+negative: precision: 73.2877%, recall: 61.849710982658955%, fscore: 67.0846394984326% (107/146/173)
+positive: precision: 67.2956%, recall: 61.849710982658955%, fscore: 64.4578313253012% (107/159/173)
+
+Evaluation - micro fscore: 71.6763%(496/692), macro fscore: 69.49551210268162% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 30, average loss_e is 0.008372969578533453 
+Dev...
+neutral: precision: 70.8229%, recall: 82.08092485549133%, fscore: 76.03748326639894% (284/401/346)
+negative: precision: 73.2877%, recall: 61.849710982658955%, fscore: 67.0846394984326% (107/146/173)
+positive: precision: 68.9655%, recall: 57.80346820809249%, fscore: 62.8930817610063% (100/145/173)
+
+Evaluation - micro fscore: 70.9538%(491/692), macro fscore: 68.67173484194593% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 31, average loss_e is 0.00814485725737652 
+Dev...
+neutral: precision: 73.0458%, recall: 78.32369942196532%, fscore: 75.59274755927477% (271/371/346)
+negative: precision: 71.0526%, recall: 62.42774566473989%, fscore: 66.46153846153845% (108/152/173)
+positive: precision: 65.0888%, recall: 63.58381502890174%, fscore: 64.32748538011695% (110/169/173)
+
+Evaluation - micro fscore: 70.6647%(489/692), macro fscore: 68.79392380031005% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 32, average loss_e is 0.008062410719540655 
+Dev...
+neutral: precision: 71.6792%, recall: 82.65895953757226%, fscore: 76.77852348993288% (286/399/346)
+negative: precision: 70.0000%, recall: 64.73988439306359%, fscore: 67.26726726726727% (112/160/173)
+positive: precision: 70.6767%, recall: 54.33526011560693%, fscore: 61.43790849673203% (94/133/173)
+
+Evaluation - micro fscore: 71.0983%(492/692), macro fscore: 68.49456641797738% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 33, average loss_e is 0.007863503006495992 
+Dev...
+neutral: precision: 69.8297%, recall: 82.94797687861272%, fscore: 75.82562747688243% (287/411/346)
+negative: precision: 77.3913%, recall: 51.445086705202314%, fscore: 61.80555555555555% (89/115/173)
+positive: precision: 65.6627%, recall: 63.005780346820806%, fscore: 64.30678466076697% (109/166/173)
+
+Evaluation - micro fscore: 70.0867%(485/692), macro fscore: 67.31265589773497% 
+
+now, best micro fscore is 71.82080924855492%, best macro fscore is 70.57275165268962%
+
+epoch is 34, average loss_e is 0.007782243776648324 
+Dev...
+neutral: precision: 71.8519%, recall: 84.10404624277457%, fscore: 77.49667110519309% (291/405/346)
+negative: precision: 75.6944%, recall: 63.005780346820806%, fscore: 68.76971608832807% (109/144/173)
+positive: precision: 68.5315%, recall: 56.64739884393064%, fscore: 62.02531645569621% (98/143/173)
+
+Evaluation - micro fscore: 71.9653%(498/692), macro fscore: 69.43056788307246% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 35, average loss_e is 0.007712019507640174 
+Dev...
+neutral: precision: 68.1716%, recall: 87.28323699421965%, fscore: 76.55259822560203% (302/443/346)
+negative: precision: 79.3651%, recall: 57.80346820809249%, fscore: 66.88963210702342% (100/126/173)
+positive: precision: 72.3577%, recall: 51.445086705202314%, fscore: 60.135135135135144% (89/123/173)
+
+Evaluation - micro fscore: 70.9538%(491/692), macro fscore: 67.85912182258686% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 36, average loss_e is 0.007588050634676248 
+Dev...
+neutral: precision: 69.0307%, recall: 84.39306358381504%, fscore: 75.94278283485045% (292/423/346)
+negative: precision: 68.6275%, recall: 60.69364161849711%, fscore: 64.41717791411043% (105/153/173)
+positive: precision: 72.4138%, recall: 48.554913294797686%, fscore: 58.13148788927336% (84/116/173)
+
+Evaluation - micro fscore: 69.5087%(481/692), macro fscore: 66.16381621274473% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 37, average loss_e is 0.007577417489635397 
+Dev...
+neutral: precision: 72.8232%, recall: 79.76878612716763%, fscore: 76.13793103448276% (276/379/346)
+negative: precision: 65.4255%, recall: 71.09826589595376%, fscore: 68.14404432132964% (123/188/173)
+positive: precision: 69.6000%, recall: 50.28901734104046%, fscore: 58.38926174496643% (87/125/173)
+
+Evaluation - micro fscore: 70.2312%(486/692), macro fscore: 67.55707903359294% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 38, average loss_e is 0.0072620145938530264 
+Dev...
+neutral: precision: 72.8900%, recall: 82.36994219653178%, fscore: 77.3405698778833% (285/391/346)
+negative: precision: 75.3425%, recall: 63.58381502890174%, fscore: 68.96551724137932% (110/146/173)
+positive: precision: 66.4516%, recall: 59.53757225433526%, fscore: 62.80487804878049% (103/155/173)
+
+Evaluation - micro fscore: 71.9653%(498/692), macro fscore: 69.70365505601436% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 39, average loss_e is 0.007161733829796466 
+Dev...
+neutral: precision: 72.2365%, recall: 81.21387283236994%, fscore: 76.4625850340136% (281/389/346)
+negative: precision: 66.8571%, recall: 67.63005780346822%, fscore: 67.24137931034483% (117/175/173)
+positive: precision: 71.8750%, recall: 53.179190751445084%, fscore: 61.129568106312284% (92/128/173)
+
+Evaluation - micro fscore: 70.8092%(490/692), macro fscore: 68.27784415022357% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 40, average loss_e is 0.007170620440904584 
+Dev...
+neutral: precision: 72.2955%, recall: 79.1907514450867%, fscore: 75.58620689655172% (274/379/346)
+negative: precision: 63.6872%, recall: 65.89595375722543%, fscore: 64.77272727272727% (114/179/173)
+positive: precision: 70.1493%, recall: 54.33526011560693%, fscore: 61.23778501628664% (94/134/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 67.19890639518854% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 41, average loss_e is 0.006827259619188096 
+Dev...
+neutral: precision: 75.7225%, recall: 75.72254335260115%, fscore: 75.72254335260115% (262/346/346)
+negative: precision: 64.2105%, recall: 70.52023121387283%, fscore: 67.21763085399449% (122/190/173)
+positive: precision: 67.3077%, recall: 60.69364161849711%, fscore: 63.829787234042556% (105/156/173)
+
+Evaluation - micro fscore: 70.6647%(489/692), macro fscore: 68.92332048021274% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 42, average loss_e is 0.00685336826160094 
+Dev...
+neutral: precision: 77.8481%, recall: 71.09826589595376%, fscore: 74.3202416918429% (246/316/346)
+negative: precision: 70.5882%, recall: 69.36416184971098%, fscore: 69.97084548104957% (120/170/173)
+positive: precision: 61.1650%, recall: 72.83236994219652%, fscore: 66.49076517150395% (126/206/173)
+
+Evaluation - micro fscore: 71.0983%(492/692), macro fscore: 70.26061744813214% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 43, average loss_e is 0.0066593113374345154 
+Dev...
+neutral: precision: 70.8229%, recall: 82.08092485549133%, fscore: 76.03748326639894% (284/401/346)
+negative: precision: 68.9441%, recall: 64.16184971098265%, fscore: 66.46706586826346% (111/161/173)
+positive: precision: 70.7692%, recall: 53.179190751445084%, fscore: 60.72607260726072% (92/130/173)
+
+Evaluation - micro fscore: 70.3757%(487/692), macro fscore: 67.74354058064104% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 44, average loss_e is 0.006489800522103906 
+Dev...
+neutral: precision: 68.5780%, recall: 86.41618497109826%, fscore: 76.47058823529413% (299/436/346)
+negative: precision: 75.5725%, recall: 57.22543352601156%, fscore: 65.13157894736841% (99/131/173)
+positive: precision: 70.4000%, recall: 50.86705202312138%, fscore: 59.06040268456375% (88/125/173)
+
+Evaluation - micro fscore: 70.2312%(486/692), macro fscore: 66.88752328907542% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 45, average loss_e is 0.006472494431809351 
+Dev...
+neutral: precision: 74.4565%, recall: 79.1907514450867%, fscore: 76.75070028011204% (274/368/346)
+negative: precision: 64.8936%, recall: 70.52023121387283%, fscore: 67.59002770083103% (122/188/173)
+positive: precision: 73.5294%, recall: 57.80346820809249%, fscore: 64.72491909385114% (100/136/173)
+
+Evaluation - micro fscore: 71.6763%(496/692), macro fscore: 69.6885490249314% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 46, average loss_e is 0.006282011013744133 
+Dev...
+neutral: precision: 71.5711%, recall: 82.94797687861272%, fscore: 76.84069611780457% (287/401/346)
+negative: precision: 68.2081%, recall: 68.20809248554913%, fscore: 68.20809248554913% (118/173/173)
+positive: precision: 70.3390%, recall: 47.97687861271676%, fscore: 57.0446735395189% (83/118/173)
+
+Evaluation - micro fscore: 70.5202%(488/692), macro fscore: 67.36448738095753% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 47, average loss_e is 0.006212136532389083 
+Dev...
+neutral: precision: 72.4409%, recall: 79.76878612716763%, fscore: 75.92847317744153% (276/381/346)
+negative: precision: 68.0982%, recall: 64.16184971098265%, fscore: 66.07142857142856% (111/163/173)
+positive: precision: 63.5135%, recall: 54.33526011560693%, fscore: 58.566978193146404% (94/148/173)
+
+Evaluation - micro fscore: 69.5087%(481/692), macro fscore: 66.85562664733882% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 48, average loss_e is 0.006181609156370467 
+Dev...
+neutral: precision: 70.6030%, recall: 81.21387283236994%, fscore: 75.53763440860214% (281/398/346)
+negative: precision: 69.3252%, recall: 65.3179190751445%, fscore: 67.26190476190476% (113/163/173)
+positive: precision: 68.7023%, recall: 52.02312138728323%, fscore: 59.21052631578948% (90/131/173)
+
+Evaluation - micro fscore: 69.9422%(484/692), macro fscore: 67.33668849543211% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 49, average loss_e is 0.005863430738753202 
+Dev...
+neutral: precision: 73.4417%, recall: 78.32369942196532%, fscore: 75.8041958041958% (271/369/346)
+negative: precision: 67.8161%, recall: 68.20809248554913%, fscore: 68.0115273775216% (118/174/173)
+positive: precision: 65.7718%, recall: 56.64739884393064%, fscore: 60.86956521739132% (98/149/173)
+
+Evaluation - micro fscore: 70.3757%(487/692), macro fscore: 68.22842946636958% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 50, average loss_e is 0.0058305708938563355 
+Dev...
+neutral: precision: 75.0000%, recall: 76.30057803468208%, fscore: 75.64469914040114% (264/352/346)
+negative: precision: 64.8936%, recall: 70.52023121387283%, fscore: 67.59002770083103% (122/188/173)
+positive: precision: 65.7895%, recall: 57.80346820809249%, fscore: 61.53846153846154% (100/152/173)
+
+Evaluation - micro fscore: 70.2312%(486/692), macro fscore: 68.2577294598979% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 51, average loss_e is 0.0057001149196329775 
+Dev...
+neutral: precision: 70.1235%, recall: 82.08092485549133%, fscore: 75.63249001331558% (284/405/346)
+negative: precision: 68.1818%, recall: 60.69364161849711%, fscore: 64.22018348623854% (105/154/173)
+positive: precision: 69.9248%, recall: 53.75722543352601%, fscore: 60.78431372549019% (93/133/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 66.87899574168145% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 52, average loss_e is 0.00536902488104771 
+Dev...
+neutral: precision: 73.9011%, recall: 77.74566473988439%, fscore: 75.77464788732395% (269/364/346)
+negative: precision: 78.1955%, recall: 60.115606936416185%, fscore: 67.97385620915031% (104/133/173)
+positive: precision: 62.5641%, recall: 70.52023121387283%, fscore: 66.30434782608695% (122/195/173)
+
+Evaluation - micro fscore: 71.5318%(495/692), macro fscore: 70.01761730752042% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 53, average loss_e is 0.005605760598270108 
+Dev...
+neutral: precision: 73.6842%, recall: 72.83236994219652%, fscore: 73.25581395348836% (252/342/346)
+negative: precision: 65.1429%, recall: 65.89595375722543%, fscore: 65.51724137931035% (114/175/173)
+positive: precision: 62.2857%, recall: 63.005780346820806%, fscore: 62.643678160919535% (109/175/173)
+
+Evaluation - micro fscore: 68.6416%(475/692), macro fscore: 67.13891116457275% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 54, average loss_e is 0.005429826869287205 
+Dev...
+neutral: precision: 70.0696%, recall: 87.28323699421965%, fscore: 77.73487773487774% (302/431/346)
+negative: precision: 79.2000%, recall: 57.22543352601156%, fscore: 66.44295302013423% (99/125/173)
+positive: precision: 71.3235%, recall: 56.06936416184971%, fscore: 62.7831715210356% (97/136/173)
+
+Evaluation - micro fscore: 71.9653%(498/692), macro fscore: 68.98700075868253% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 55, average loss_e is 0.005359285774792792 
+Dev...
+neutral: precision: 68.4964%, recall: 82.94797687861272%, fscore: 75.0326797385621% (287/419/346)
+negative: precision: 70.6294%, recall: 58.38150289017341%, fscore: 63.92405063291139% (101/143/173)
+positive: precision: 69.2308%, recall: 52.02312138728323%, fscore: 59.4059405940594% (90/130/173)
+
+Evaluation - micro fscore: 69.0751%(478/692), macro fscore: 66.1208903218443% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 56, average loss_e is 0.005235640515041139 
+Dev...
+neutral: precision: 72.7763%, recall: 78.03468208092485%, fscore: 75.31380753138075% (270/371/346)
+negative: precision: 60.8040%, recall: 69.94219653179191%, fscore: 65.05376344086021% (121/199/173)
+positive: precision: 70.4918%, recall: 49.71098265895954%, fscore: 58.305084745762706% (86/122/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 66.22421857266788% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 57, average loss_e is 0.00486183648083207 
+Dev...
+neutral: precision: 70.7500%, recall: 81.79190751445087%, fscore: 75.87131367292226% (283/400/346)
+negative: precision: 68.9873%, recall: 63.005780346820806%, fscore: 65.86102719033234% (109/158/173)
+positive: precision: 66.4179%, recall: 51.445086705202314%, fscore: 57.98045602605863% (89/134/173)
+
+Evaluation - micro fscore: 69.5087%(481/692), macro fscore: 66.57093229643775% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 58, average loss_e is 0.004707667948107938 
+Dev...
+neutral: precision: 66.2946%, recall: 85.83815028901735%, fscore: 74.8110831234257% (297/448/346)
+negative: precision: 73.5537%, recall: 51.445086705202314%, fscore: 60.544217687074834% (89/121/173)
+positive: precision: 68.2927%, recall: 48.554913294797686%, fscore: 56.756756756756744% (84/123/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 64.0373525224191% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 59, average loss_e is 0.004660451238290692 
+Dev...
+neutral: precision: 72.8460%, recall: 80.63583815028902%, fscore: 76.54320987654322% (279/383/346)
+negative: precision: 64.7059%, recall: 69.94219653179191%, fscore: 67.22222222222223% (121/187/173)
+positive: precision: 70.4918%, recall: 49.71098265895954%, fscore: 58.305084745762706% (86/122/173)
+
+Evaluation - micro fscore: 70.2312%(486/692), macro fscore: 67.35683894817605% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 60, average loss_e is 0.004693011809092928 
+Dev...
+neutral: precision: 70.4057%, recall: 85.26011560693641%, fscore: 77.12418300653594% (295/419/346)
+negative: precision: 76.0331%, recall: 53.179190751445084%, fscore: 62.58503401360544% (92/121/173)
+positive: precision: 67.7632%, recall: 59.53757225433526%, fscore: 63.38461538461539% (103/152/173)
+
+Evaluation - micro fscore: 70.8092%(490/692), macro fscore: 67.69794413491891% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 61, average loss_e is 0.004519708946404256 
+Dev...
+neutral: precision: 72.5212%, recall: 73.98843930635837%, fscore: 73.24749642346208% (256/353/346)
+negative: precision: 62.4339%, recall: 68.20809248554913%, fscore: 65.19337016574586% (118/189/173)
+positive: precision: 66.6667%, recall: 57.80346820809249%, fscore: 61.91950464396285% (100/150/173)
+
+Evaluation - micro fscore: 68.4971%(474/692), macro fscore: 66.78679041105693% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 62, average loss_e is 0.004363609454119388 
+Dev...
+neutral: precision: 71.0594%, recall: 79.47976878612717%, fscore: 75.03410641200546% (275/387/346)
+negative: precision: 68.1250%, recall: 63.005780346820806%, fscore: 65.46546546546546% (109/160/173)
+positive: precision: 64.8276%, recall: 54.33526011560693%, fscore: 59.1194968553459% (94/145/173)
+
+Evaluation - micro fscore: 69.0751%(478/692), macro fscore: 66.5396895776056% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 63, average loss_e is 0.0042734736747735615 
+Dev...
+neutral: precision: 74.6988%, recall: 71.67630057803468%, fscore: 73.15634218289085% (248/332/346)
+negative: precision: 65.3631%, recall: 67.63005780346822%, fscore: 66.47727272727273% (117/179/173)
+positive: precision: 61.3260%, recall: 64.16184971098265%, fscore: 62.71186440677966% (111/181/173)
+
+Evaluation - micro fscore: 68.7861%(476/692), macro fscore: 67.44849310564774% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 64, average loss_e is 0.004085640861339183 
+Dev...
+neutral: precision: 71.6621%, recall: 76.01156069364163%, fscore: 73.77279102384291% (263/367/346)
+negative: precision: 60.7330%, recall: 67.05202312138728%, fscore: 63.736263736263744% (116/191/173)
+positive: precision: 69.4030%, recall: 53.75722543352601%, fscore: 60.58631921824104% (93/134/173)
+
+Evaluation - micro fscore: 68.2081%(472/692), macro fscore: 66.03179132611588% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 65, average loss_e is 0.004158197803546352 
+Dev...
+neutral: precision: 71.5405%, recall: 79.1907514450867%, fscore: 75.17146776406037% (274/383/346)
+negative: precision: 68.9873%, recall: 63.005780346820806%, fscore: 65.86102719033234% (109/158/173)
+positive: precision: 68.2119%, recall: 59.53757225433526%, fscore: 63.580246913580254% (103/151/173)
+
+Evaluation - micro fscore: 70.2312%(486/692), macro fscore: 68.20424728932431% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 66, average loss_e is 0.0041923447896973515 
+Dev...
+neutral: precision: 70.4000%, recall: 76.30057803468208%, fscore: 73.23162274618585% (264/375/346)
+negative: precision: 67.6829%, recall: 64.16184971098265%, fscore: 65.8753709198813% (111/164/173)
+positive: precision: 61.4379%, recall: 54.33526011560693%, fscore: 57.668711656441715% (94/153/173)
+
+Evaluation - micro fscore: 67.7746%(469/692), macro fscore: 65.59190177416963% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 67, average loss_e is 0.003851858447590957 
+Dev...
+neutral: precision: 72.7545%, recall: 70.23121387283237%, fscore: 71.47058823529412% (243/334/346)
+negative: precision: 60.7330%, recall: 67.05202312138728%, fscore: 63.736263736263744% (116/191/173)
+positive: precision: 62.2754%, recall: 60.115606936416185%, fscore: 61.17647058823529% (104/167/173)
+
+Evaluation - micro fscore: 66.9075%(463/692), macro fscore: 65.46110751993105% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 68, average loss_e is 0.003651208606577117 
+Dev...
+neutral: precision: 69.3467%, recall: 79.76878612716763%, fscore: 74.19354838709677% (276/398/346)
+negative: precision: 67.9245%, recall: 62.42774566473989%, fscore: 65.06024096385542% (108/159/173)
+positive: precision: 64.4444%, recall: 50.28901734104046%, fscore: 56.493506493506494% (87/135/173)
+
+Evaluation - micro fscore: 68.0636%(471/692), macro fscore: 65.24909861481957% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 69, average loss_e is 0.003699734797511174 
+Dev...
+neutral: precision: 72.9730%, recall: 78.03468208092485%, fscore: 75.41899441340783% (270/370/346)
+negative: precision: 72.4832%, recall: 62.42774566473989%, fscore: 67.0807453416149% (108/149/173)
+positive: precision: 63.5838%, recall: 63.58381502890174%, fscore: 63.58381502890174% (110/173/173)
+
+Evaluation - micro fscore: 70.5202%(488/692), macro fscore: 68.69451826130816% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 70, average loss_e is 0.003459501507863098 
+Dev...
+neutral: precision: 69.6891%, recall: 77.74566473988439%, fscore: 73.49726775956283% (269/386/346)
+negative: precision: 62.7778%, recall: 65.3179190751445%, fscore: 64.02266288951841% (113/180/173)
+positive: precision: 68.2540%, recall: 49.71098265895954%, fscore: 57.52508361204014% (86/126/173)
+
+Evaluation - micro fscore: 67.6301%(468/692), macro fscore: 65.01500475370713% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 71, average loss_e is 0.003260191155797137 
+Dev...
+neutral: precision: 71.5762%, recall: 80.05780346820809%, fscore: 75.57980900409278% (277/387/346)
+negative: precision: 68.0723%, recall: 65.3179190751445%, fscore: 66.66666666666666% (113/166/173)
+positive: precision: 68.3453%, recall: 54.91329479768786%, fscore: 60.89743589743589% (95/139/173)
+
+Evaluation - micro fscore: 70.0867%(485/692), macro fscore: 67.71463718939845% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 72, average loss_e is 0.003265093729299094 
+Dev...
+neutral: precision: 72.5543%, recall: 77.16763005780348%, fscore: 74.78991596638654% (267/368/346)
+negative: precision: 68.3230%, recall: 63.58381502890174%, fscore: 65.86826347305389% (110/161/173)
+positive: precision: 64.4172%, recall: 60.69364161849711%, fscore: 62.5% (105/163/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 67.71939314648016% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 73, average loss_e is 0.0031479523488681534 
+Dev...
+neutral: precision: 71.1590%, recall: 76.30057803468208%, fscore: 73.64016736401673% (264/371/346)
+negative: precision: 64.2458%, recall: 66.47398843930635%, fscore: 65.3409090909091% (115/179/173)
+positive: precision: 64.7887%, recall: 53.179190751445084%, fscore: 58.412698412698404% (92/142/173)
+
+Evaluation - micro fscore: 68.0636%(471/692), macro fscore: 65.79792495587475% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 74, average loss_e is 0.003358854349151406 
+Dev...
+neutral: precision: 75.2475%, recall: 65.89595375722543%, fscore: 70.26194144838213% (228/303/346)
+negative: precision: 54.5064%, recall: 73.41040462427746%, fscore: 62.561576354679815% (127/233/173)
+positive: precision: 61.5385%, recall: 55.49132947976878%, fscore: 58.35866261398176% (96/156/173)
+
+Evaluation - micro fscore: 65.1734%(451/692), macro fscore: 63.727393472347906% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 75, average loss_e is 0.0032046800693116932 
+Dev...
+neutral: precision: 73.4973%, recall: 77.74566473988439%, fscore: 75.561797752809% (269/366/346)
+negative: precision: 70.0000%, recall: 64.73988439306359%, fscore: 67.26726726726727% (112/160/173)
+positive: precision: 63.8554%, recall: 61.27167630057804%, fscore: 62.536873156342175% (106/166/173)
+
+Evaluation - micro fscore: 70.3757%(487/692), macro fscore: 68.45531272547282% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 76, average loss_e is 0.0030215303615514872 
+Dev...
+neutral: precision: 71.8579%, recall: 76.01156069364163%, fscore: 73.87640449438202% (263/366/346)
+negative: precision: 70.8333%, recall: 58.95953757225434%, fscore: 64.35331230283911% (102/144/173)
+positive: precision: 60.9890%, recall: 64.16184971098265%, fscore: 62.53521126760564% (111/182/173)
+
+Evaluation - micro fscore: 68.7861%(476/692), macro fscore: 66.9216426882756% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 77, average loss_e is 0.00293295952843084 
+Dev...
+neutral: precision: 71.7949%, recall: 80.92485549132948%, fscore: 76.08695652173914% (280/390/346)
+negative: precision: 66.0714%, recall: 64.16184971098265%, fscore: 65.10263929618768% (111/168/173)
+positive: precision: 68.6567%, recall: 53.179190751445084%, fscore: 59.93485342019543% (92/134/173)
+
+Evaluation - micro fscore: 69.7977%(483/692), macro fscore: 67.04148307937409% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 78, average loss_e is 0.0028573831445917637 
+Dev...
+neutral: precision: 74.1176%, recall: 72.83236994219652%, fscore: 73.46938775510203% (252/340/346)
+negative: precision: 62.7660%, recall: 68.20809248554913%, fscore: 65.37396121883657% (118/188/173)
+positive: precision: 62.1951%, recall: 58.95953757225434%, fscore: 60.53412462908011% (102/164/173)
+
+Evaluation - micro fscore: 68.2081%(472/692), macro fscore: 66.4591578676729% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 79, average loss_e is 0.002743271265026866 
+Dev...
+neutral: precision: 70.1754%, recall: 80.92485549132948%, fscore: 75.16778523489933% (280/399/346)
+negative: precision: 72.9323%, recall: 56.06936416184971%, fscore: 63.39869281045751% (97/133/173)
+positive: precision: 62.5000%, recall: 57.80346820809249%, fscore: 60.06006006006006% (100/160/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 66.20884603513898% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 80, average loss_e is 0.0027126919273857257 
+Dev...
+neutral: precision: 70.8763%, recall: 79.47976878612717%, fscore: 74.93188010899183% (275/388/346)
+negative: precision: 65.6627%, recall: 63.005780346820806%, fscore: 64.30678466076697% (109/166/173)
+positive: precision: 65.9420%, recall: 52.601156069364166%, fscore: 58.520900321543415% (91/138/173)
+
+Evaluation - micro fscore: 68.6416%(475/692), macro fscore: 65.91985503043406% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 81, average loss_e is 0.003049484710684236 
+Dev...
+neutral: precision: 71.2082%, recall: 80.05780346820809%, fscore: 75.37414965986396% (277/389/346)
+negative: precision: 65.2941%, recall: 64.16184971098265%, fscore: 64.72303206997084% (111/170/173)
+positive: precision: 69.1729%, recall: 53.179190751445084%, fscore: 60.130718954248366% (92/133/173)
+
+Evaluation - micro fscore: 69.3642%(480/692), macro fscore: 66.74263356136106% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 82, average loss_e is 0.0026108551810837674 
+Dev...
+neutral: precision: 73.2782%, recall: 76.878612716763%, fscore: 75.03526093088858% (266/363/346)
+negative: precision: 63.6364%, recall: 64.73988439306359%, fscore: 64.18338108882521% (112/176/173)
+positive: precision: 67.9739%, recall: 60.115606936416185%, fscore: 63.8036809815951% (104/153/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 67.67410766710297% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 83, average loss_e is 0.002386491433289662 
+Dev...
+neutral: precision: 73.1481%, recall: 68.4971098265896%, fscore: 70.74626865671641% (237/324/346)
+negative: precision: 67.7019%, recall: 63.005780346820806%, fscore: 65.2694610778443% (109/161/173)
+positive: precision: 56.5217%, recall: 67.63005780346822%, fscore: 61.578947368421055% (117/207/173)
+
+Evaluation - micro fscore: 66.9075%(463/692), macro fscore: 65.86489236766059% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 84, average loss_e is 0.0026158953717510614 
+Dev...
+neutral: precision: 66.7476%, recall: 79.47976878612717%, fscore: 72.55936675461741% (275/412/346)
+negative: precision: 62.4277%, recall: 62.42774566473989%, fscore: 62.42774566473989% (108/173/173)
+positive: precision: 65.4206%, recall: 40.46242774566474%, fscore: 50.0% (70/107/173)
+
+Evaluation - micro fscore: 65.4624%(453/692), macro fscore: 61.66237080645244% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 85, average loss_e is 0.0026563574959124836 
+Dev...
+neutral: precision: 69.7044%, recall: 81.79190751445087%, fscore: 75.2659574468085% (283/406/346)
+negative: precision: 69.1781%, recall: 58.38150289017341%, fscore: 63.322884012539184% (101/146/173)
+positive: precision: 68.5714%, recall: 55.49132947976878%, fscore: 61.34185303514377% (96/140/173)
+
+Evaluation - micro fscore: 69.3642%(480/692), macro fscore: 66.64356483149714% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 86, average loss_e is 0.002451050211675465 
+Dev...
+neutral: precision: 72.7273%, recall: 69.36416184971098%, fscore: 71.00591715976331% (240/330/346)
+negative: precision: 59.2965%, recall: 68.20809248554913%, fscore: 63.44086021505375% (118/199/173)
+positive: precision: 64.4172%, recall: 60.69364161849711%, fscore: 62.5% (105/163/173)
+
+Evaluation - micro fscore: 66.9075%(463/692), macro fscore: 65.64892579160569% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 87, average loss_e is 0.0022927397168336474 
+Dev...
+neutral: precision: 72.9885%, recall: 73.41040462427746%, fscore: 73.19884726224785% (254/348/346)
+negative: precision: 67.4847%, recall: 63.58381502890174%, fscore: 65.47619047619047% (110/163/173)
+positive: precision: 62.4309%, recall: 65.3179190751445%, fscore: 63.84180790960451% (113/181/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 67.50561521601426% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 88, average loss_e is 0.002186436195411168 
+Dev...
+neutral: precision: 69.2118%, recall: 81.21387283236994%, fscore: 74.7340425531915% (281/406/346)
+negative: precision: 69.3750%, recall: 64.16184971098265%, fscore: 66.66666666666666% (111/160/173)
+positive: precision: 66.6667%, recall: 48.554913294797686%, fscore: 56.187290969899664% (84/126/173)
+
+Evaluation - micro fscore: 68.7861%(476/692), macro fscore: 65.86266672991927% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 89, average loss_e is 0.0023062508226590877 
+Dev...
+neutral: precision: 72.5275%, recall: 76.30057803468208%, fscore: 74.36619718309858% (264/364/346)
+negative: precision: 71.5190%, recall: 65.3179190751445%, fscore: 68.27794561933534% (113/158/173)
+positive: precision: 61.7647%, recall: 60.69364161849711%, fscore: 61.224489795918366% (105/170/173)
+
+Evaluation - micro fscore: 69.6532%(482/692), macro fscore: 67.95621086611744% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 90, average loss_e is 0.0023230873731354593 
+Dev...
+neutral: precision: 72.5904%, recall: 69.65317919075144%, fscore: 71.09144542772862% (241/332/346)
+negative: precision: 58.0488%, recall: 68.78612716763006%, fscore: 62.96296296296296% (119/205/173)
+positive: precision: 63.2258%, recall: 56.64739884393064%, fscore: 59.75609756097562% (98/155/173)
+
+Evaluation - micro fscore: 66.1850%(458/692), macro fscore: 64.60350198388906% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 91, average loss_e is 0.002078481286417275 
+Dev...
+neutral: precision: 73.1778%, recall: 72.54335260115607%, fscore: 72.85921625544267% (251/343/346)
+negative: precision: 60.1010%, recall: 68.78612716763006%, fscore: 64.15094339622642% (119/198/173)
+positive: precision: 66.2252%, recall: 57.80346820809249%, fscore: 61.72839506172839% (100/151/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 66.24618490446582% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 92, average loss_e is 0.0020690379944648973 
+Dev...
+neutral: precision: 70.8010%, recall: 79.1907514450867%, fscore: 74.7612551159618% (274/387/346)
+negative: precision: 67.7632%, recall: 59.53757225433526%, fscore: 63.38461538461539% (103/152/173)
+positive: precision: 67.3203%, recall: 59.53757225433526%, fscore: 63.190184049079754% (103/153/173)
+
+Evaluation - micro fscore: 69.3642%(480/692), macro fscore: 67.11201818321898% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 93, average loss_e is 0.002181724684992425 
+Dev...
+neutral: precision: 72.2063%, recall: 72.83236994219652%, fscore: 72.5179856115108% (252/349/346)
+negative: precision: 62.8415%, recall: 66.47398843930635%, fscore: 64.60674157303372% (115/183/173)
+positive: precision: 63.7500%, recall: 58.95953757225434%, fscore: 61.261261261261254% (102/160/173)
+
+Evaluation - micro fscore: 67.7746%(469/692), macro fscore: 66.1286628152686% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 94, average loss_e is 0.002087162014652918 
+Dev...
+neutral: precision: 74.1667%, recall: 77.16763005780348%, fscore: 75.63739376770539% (267/360/346)
+negative: precision: 63.5359%, recall: 66.47398843930635%, fscore: 64.97175141242938% (115/181/173)
+positive: precision: 66.8874%, recall: 58.38150289017341%, fscore: 62.34567901234568% (101/151/173)
+
+Evaluation - micro fscore: 69.7977%(483/692), macro fscore: 67.65160806416014% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 95, average loss_e is 0.0019323585426662953 
+Dev...
+neutral: precision: 71.7877%, recall: 74.27745664739885%, fscore: 73.01136363636363% (257/358/346)
+negative: precision: 59.8985%, recall: 68.20809248554913%, fscore: 63.78378378378379% (118/197/173)
+positive: precision: 67.8832%, recall: 53.75722543352601%, fscore: 60.0% (93/137/173)
+
+Evaluation - micro fscore: 67.6301%(468/692), macro fscore: 65.59838247338247% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 96, average loss_e is 0.0018843789472083124 
+Dev...
+neutral: precision: 70.9763%, recall: 77.74566473988439%, fscore: 74.20689655172413% (269/379/346)
+negative: precision: 63.7363%, recall: 67.05202312138728%, fscore: 65.35211267605634% (116/182/173)
+positive: precision: 69.4656%, recall: 52.601156069364166%, fscore: 59.86842105263158% (91/131/173)
+
+Evaluation - micro fscore: 68.7861%(476/692), macro fscore: 66.47581009347068% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 97, average loss_e is 0.0017819077730397408 
+Dev...
+neutral: precision: 70.3209%, recall: 76.01156069364163%, fscore: 73.05555555555556% (263/374/346)
+negative: precision: 69.9301%, recall: 57.80346820809249%, fscore: 63.29113924050633% (100/143/173)
+positive: precision: 59.4286%, recall: 60.115606936416185%, fscore: 59.77011494252873% (104/175/173)
+
+Evaluation - micro fscore: 67.4855%(467/692), macro fscore: 65.37226991286353% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 98, average loss_e is 0.0017624396381766669 
+Dev...
+neutral: precision: 71.2435%, recall: 79.47976878612717%, fscore: 75.13661202185791% (275/386/346)
+negative: precision: 63.5838%, recall: 63.58381502890174%, fscore: 63.58381502890174% (110/173/173)
+positive: precision: 69.1729%, recall: 53.179190751445084%, fscore: 60.130718954248366% (92/133/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 66.28371533500267% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 99, average loss_e is 0.001560745456099168 
+Dev...
+neutral: precision: 70.2842%, recall: 78.61271676300578%, fscore: 74.21555252387448% (272/387/346)
+negative: precision: 65.8683%, recall: 63.58381502890174%, fscore: 64.70588235294117% (110/167/173)
+positive: precision: 65.9420%, recall: 52.601156069364166%, fscore: 58.520900321543415% (91/138/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 65.81411173278636% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 100, average loss_e is 0.001779725559219737 
+Dev...
+neutral: precision: 71.5847%, recall: 75.72254335260115%, fscore: 73.59550561797754% (262/366/346)
+negative: precision: 66.4634%, recall: 63.005780346820806%, fscore: 64.68842729970325% (109/164/173)
+positive: precision: 61.1111%, recall: 57.22543352601156%, fscore: 59.1044776119403% (99/162/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 65.79613684320704% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 101, average loss_e is 0.0017648497881481843 
+Dev...
+neutral: precision: 71.2000%, recall: 77.16763005780348%, fscore: 74.06380027739252% (267/375/346)
+negative: precision: 66.0256%, recall: 59.53757225433526%, fscore: 62.61398176291794% (103/156/173)
+positive: precision: 63.9752%, recall: 59.53757225433526%, fscore: 61.67664670658684% (103/161/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 66.11814291563243% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 102, average loss_e is 0.0015258522328863643 
+Dev...
+neutral: precision: 72.6287%, recall: 77.45664739884393%, fscore: 74.96503496503496% (268/369/346)
+negative: precision: 60.4167%, recall: 67.05202312138728%, fscore: 63.56164383561643% (116/192/173)
+positive: precision: 67.9389%, recall: 51.445086705202314%, fscore: 58.55263157894737% (89/131/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 65.69310345986625% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 103, average loss_e is 0.0016504945316618042 
+Dev...
+neutral: precision: 69.3046%, recall: 83.52601156069365%, fscore: 75.75360419397117% (289/417/346)
+negative: precision: 66.8790%, recall: 60.69364161849711%, fscore: 63.63636363636363% (105/157/173)
+positive: precision: 71.1864%, recall: 48.554913294797686%, fscore: 57.731958762886606% (84/118/173)
+
+Evaluation - micro fscore: 69.0751%(478/692), macro fscore: 65.70730886440714% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 104, average loss_e is 0.0014393515718568648 
+Dev...
+neutral: precision: 71.7949%, recall: 80.92485549132948%, fscore: 76.08695652173914% (280/390/346)
+negative: precision: 67.5325%, recall: 60.115606936416185%, fscore: 63.60856269113151% (104/154/173)
+positive: precision: 66.8919%, recall: 57.22543352601156%, fscore: 61.6822429906542% (99/148/173)
+
+Evaluation - micro fscore: 69.7977%(483/692), macro fscore: 67.12592073450828% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 105, average loss_e is 0.0015331066328775594 
+Dev...
+neutral: precision: 72.5146%, recall: 71.67630057803468%, fscore: 72.09302325581395% (248/342/346)
+negative: precision: 62.3711%, recall: 69.94219653179191%, fscore: 65.94005449591282% (121/194/173)
+positive: precision: 61.5385%, recall: 55.49132947976878%, fscore: 58.35866261398176% (96/156/173)
+
+Evaluation - micro fscore: 67.1965%(465/692), macro fscore: 65.46391345523618% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 106, average loss_e is 0.0015568633790113678 
+Dev...
+neutral: precision: 73.2955%, recall: 74.56647398843931%, fscore: 73.92550143266476% (258/352/346)
+negative: precision: 64.7399%, recall: 64.73988439306359%, fscore: 64.73988439306359% (112/173/173)
+positive: precision: 62.2754%, recall: 60.115606936416185%, fscore: 61.17647058823529% (104/167/173)
+
+Evaluation - micro fscore: 68.4971%(474/692), macro fscore: 66.61395213798788% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 107, average loss_e is 0.0016707493965181389 
+Dev...
+neutral: precision: 73.0159%, recall: 66.47398843930635%, fscore: 69.59152798789712% (230/315/346)
+negative: precision: 54.1126%, recall: 72.25433526011561%, fscore: 61.88118811881189% (125/231/173)
+positive: precision: 63.0137%, recall: 53.179190751445084%, fscore: 57.68025078369906% (92/146/173)
+
+Evaluation - micro fscore: 64.5954%(447/692), macro fscore: 63.05098896346936% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 108, average loss_e is 0.0016689938276279147 
+Dev...
+neutral: precision: 70.1531%, recall: 79.47976878612717%, fscore: 74.52574525745257% (275/392/346)
+negative: precision: 64.4172%, recall: 60.69364161849711%, fscore: 62.5% (105/163/173)
+positive: precision: 67.8832%, recall: 53.75722543352601%, fscore: 60.0% (93/137/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 65.67524841915086% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 109, average loss_e is 0.0014403308741748333 
+Dev...
+neutral: precision: 73.0458%, recall: 78.32369942196532%, fscore: 75.59274755927477% (271/371/346)
+negative: precision: 61.8785%, recall: 64.73988439306359%, fscore: 63.2768361581921% (112/181/173)
+positive: precision: 67.1429%, recall: 54.33526011560693%, fscore: 60.06389776357827% (94/140/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 66.3111604936817% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 110, average loss_e is 0.0012330142205001368 
+Dev...
+neutral: precision: 74.5098%, recall: 76.878612716763%, fscore: 75.67567567567566% (266/357/346)
+negative: precision: 66.8712%, recall: 63.005780346820806%, fscore: 64.8809523809524% (109/163/173)
+positive: precision: 65.1163%, recall: 64.73988439306359%, fscore: 64.92753623188406% (112/172/173)
+
+Evaluation - micro fscore: 70.3757%(487/692), macro fscore: 68.49472142950404% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 111, average loss_e is 0.001335130786173977 
+Dev...
+neutral: precision: 71.0594%, recall: 79.47976878612717%, fscore: 75.03410641200546% (275/387/346)
+negative: precision: 63.0058%, recall: 63.005780346820806%, fscore: 63.005780346820806% (109/173/173)
+positive: precision: 67.4242%, recall: 51.445086705202314%, fscore: 58.36065573770492% (89/132/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 65.46684749884372% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 112, average loss_e is 0.0011287174221456088 
+Dev...
+neutral: precision: 68.4211%, recall: 82.65895953757226%, fscore: 74.86910994764396% (286/418/346)
+negative: precision: 67.0807%, recall: 62.42774566473989%, fscore: 64.67065868263472% (108/161/173)
+positive: precision: 67.2566%, recall: 43.93063583815029%, fscore: 53.14685314685315% (76/113/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 64.22887392571062% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 113, average loss_e is 0.0014403518942678918 
+Dev...
+neutral: precision: 67.9389%, recall: 77.16763005780348%, fscore: 72.25981055480379% (267/393/346)
+negative: precision: 61.2360%, recall: 63.005780346820806%, fscore: 62.10826210826211% (109/178/173)
+positive: precision: 66.9421%, recall: 46.82080924855491%, fscore: 55.10204081632652% (81/121/173)
+
+Evaluation - micro fscore: 66.0405%(457/692), macro fscore: 63.15670449313081% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 114, average loss_e is 0.001289935009815369 
+Dev...
+neutral: precision: 70.3209%, recall: 76.01156069364163%, fscore: 73.05555555555556% (263/374/346)
+negative: precision: 65.9864%, recall: 56.06936416184971%, fscore: 60.624999999999986% (97/147/173)
+positive: precision: 63.1579%, recall: 62.42774566473989%, fscore: 62.7906976744186% (108/171/173)
+
+Evaluation - micro fscore: 67.6301%(468/692), macro fscore: 65.49041774332471% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 115, average loss_e is 0.001116925668463168 
+Dev...
+neutral: precision: 68.1055%, recall: 82.08092485549133%, fscore: 74.44298820445609% (284/417/346)
+negative: precision: 71.1111%, recall: 55.49132947976878%, fscore: 62.33766233766234% (96/135/173)
+positive: precision: 65.0000%, recall: 52.601156069364166%, fscore: 58.146964856230035% (91/140/173)
+
+Evaluation - micro fscore: 68.0636%(471/692), macro fscore: 64.9758717994495% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 116, average loss_e is 0.0011954327281421926 
+Dev...
+neutral: precision: 69.0722%, recall: 77.45664739884393%, fscore: 73.02452316076294% (268/388/346)
+negative: precision: 65.8683%, recall: 63.58381502890174%, fscore: 64.70588235294117% (110/167/173)
+positive: precision: 61.3139%, recall: 48.554913294797686%, fscore: 54.19354838709677% (84/137/173)
+
+Evaluation - micro fscore: 66.7630%(462/692), macro fscore: 63.97465130026697% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 117, average loss_e is 0.0009858866907627682 
+Dev...
+neutral: precision: 69.6203%, recall: 79.47976878612717%, fscore: 74.22402159244264% (275/395/346)
+negative: precision: 67.7419%, recall: 60.69364161849711%, fscore: 64.02439024390245% (105/155/173)
+positive: precision: 63.3803%, recall: 52.02312138728323%, fscore: 57.14285714285715% (90/142/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 65.13042299306741% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 118, average loss_e is 0.0009214292563692837 
+Dev...
+neutral: precision: 72.4518%, recall: 76.01156069364163%, fscore: 74.18899858956276% (263/363/346)
+negative: precision: 62.2340%, recall: 67.63005780346822%, fscore: 64.81994459833794% (117/188/173)
+positive: precision: 67.3759%, recall: 54.91329479768786%, fscore: 60.509554140127385% (95/141/173)
+
+Evaluation - micro fscore: 68.6416%(475/692), macro fscore: 66.50616577600937% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 119, average loss_e is 0.0011880939539191692 
+Dev...
+neutral: precision: 70.1031%, recall: 78.61271676300578%, fscore: 74.11444141689374% (272/388/346)
+negative: precision: 65.7895%, recall: 57.80346820809249%, fscore: 61.53846153846154% (100/152/173)
+positive: precision: 64.4737%, recall: 56.64739884393064%, fscore: 60.30769230769232% (98/152/173)
+
+Evaluation - micro fscore: 67.9191%(470/692), macro fscore: 65.32019842101587% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 120, average loss_e is 0.001087388753705677 
+Dev...
+neutral: precision: 70.5094%, recall: 76.01156069364163%, fscore: 73.15716272600834% (263/373/346)
+negative: precision: 69.9301%, recall: 57.80346820809249%, fscore: 63.29113924050633% (100/143/173)
+positive: precision: 61.9318%, recall: 63.005780346820806%, fscore: 62.46418338108882% (109/176/173)
+
+Evaluation - micro fscore: 68.2081%(472/692), macro fscore: 66.30416178253449% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 121, average loss_e is 0.0013106091595991344 
+Dev...
+neutral: precision: 70.6349%, recall: 77.16763005780348%, fscore: 73.75690607734808% (267/378/346)
+negative: precision: 70.1389%, recall: 58.38150289017341%, fscore: 63.72239747634069% (101/144/173)
+positive: precision: 62.3529%, recall: 61.27167630057804%, fscore: 61.80758017492711% (106/170/173)
+
+Evaluation - micro fscore: 68.4971%(474/692), macro fscore: 66.42896124287195% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 122, average loss_e is 0.0012879013265031675 
+Dev...
+neutral: precision: 70.0787%, recall: 77.16763005780348%, fscore: 73.45254470426408% (267/381/346)
+negative: precision: 60.8247%, recall: 68.20809248554913%, fscore: 64.30517711171662% (118/194/173)
+positive: precision: 70.0855%, recall: 47.398843930635834%, fscore: 56.551724137931025% (82/117/173)
+
+Evaluation - micro fscore: 67.4855%(467/692), macro fscore: 64.76981531797058% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 123, average loss_e is 0.0011628810167835302 
+Dev...
+neutral: precision: 69.1542%, recall: 80.34682080924856%, fscore: 74.33155080213903% (278/402/346)
+negative: precision: 67.7852%, recall: 58.38150289017341%, fscore: 62.73291925465839% (101/149/173)
+positive: precision: 63.8298%, recall: 52.02312138728323%, fscore: 57.324840764331206% (90/141/173)
+
+Evaluation - micro fscore: 67.7746%(469/692), macro fscore: 64.79643694037621% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 124, average loss_e is 0.0010504992776764178 
+Dev...
+neutral: precision: 72.7011%, recall: 73.121387283237%, fscore: 72.91066282420749% (253/348/346)
+negative: precision: 64.9718%, recall: 66.47398843930635%, fscore: 65.71428571428571% (115/177/173)
+positive: precision: 62.8743%, recall: 60.69364161849711%, fscore: 61.76470588235294% (105/167/173)
+
+Evaluation - micro fscore: 68.3526%(473/692), macro fscore: 66.79655147361538% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 125, average loss_e is 0.0010561525259803676 
+Dev...
+neutral: precision: 70.8661%, recall: 78.03468208092485%, fscore: 74.27785419532326% (270/381/346)
+negative: precision: 64.4068%, recall: 65.89595375722543%, fscore: 65.14285714285715% (114/177/173)
+positive: precision: 69.4030%, recall: 53.75722543352601%, fscore: 60.58631921824104% (93/134/173)
+
+Evaluation - micro fscore: 68.9306%(477/692), macro fscore: 66.66901018547381% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 126, average loss_e is 0.0010275248038981641 
+Dev...
+neutral: precision: 71.6253%, recall: 75.14450867052022%, fscore: 73.34273624823696% (260/363/346)
+negative: precision: 64.5714%, recall: 65.3179190751445%, fscore: 64.94252873563218% (113/175/173)
+positive: precision: 66.8831%, recall: 59.53757225433526%, fscore: 62.99694189602446% (103/154/173)
+
+Evaluation - micro fscore: 68.7861%(476/692), macro fscore: 67.09406895996453% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 127, average loss_e is 0.0009340038529017522 
+Dev...
+neutral: precision: 69.3467%, recall: 79.76878612716763%, fscore: 74.19354838709677% (276/398/346)
+negative: precision: 69.2857%, recall: 56.06936416184971%, fscore: 61.980830670926515% (97/140/173)
+positive: precision: 63.6364%, recall: 56.64739884393064%, fscore: 59.9388379204893% (98/154/173)
+
+Evaluation - micro fscore: 68.0636%(471/692), macro fscore: 65.37107232617086% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
+
+epoch is 128, average loss_e is 0.0008579873324286345 
+Dev...
+neutral: precision: 72.2826%, recall: 76.878612716763%, fscore: 74.50980392156863% (266/368/346)
+negative: precision: 66.4671%, recall: 64.16184971098265%, fscore: 65.29411764705883% (111/167/173)
+positive: precision: 61.7834%, recall: 56.06936416184971%, fscore: 58.78787878787879% (97/157/173)
+
+Evaluation - micro fscore: 68.4971%(474/692), macro fscore: 66.19726678550208% 
+
+now, best micro fscore is 71.96531791907515%, best macro fscore is 70.57275165268962%
