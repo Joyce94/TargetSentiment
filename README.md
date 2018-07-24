@@ -11,8 +11,9 @@ this is an implementation for the paper:"Attention Modeling for Targeted Sentime
 
 |Model|BILSTM-ATT|BILSTM-ATT-C|BILSTM-ATT-G|
 |------|------|------- |-------|
-|paper|72.4  70.5|72.5  70.9|73.6  72.1|
-|my_version|72.3  70.2|72.0  70.6|73.0  71.8|
+||||Acc / Fscore|
+|paper|72.4 / 70.5|72.5 / 70.9|73.6 / 72.1|
+|my_version|72.3 / 70.2|72.0 / 70.6|73.0 / 71.8|
 
 -----------------------
 
