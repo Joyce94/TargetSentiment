@@ -17,4 +17,4 @@ this is an implementation for the paper:"Attention Modeling for Targeted Sentime
 -----------------------
 
 ## Data
-	T_data(training/test dataset of Tang et al. (2016))
+	T_data (the training/test dataset of Tang et al. (2016))
